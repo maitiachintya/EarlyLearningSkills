@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LearnActivity">
+
+    <ImageView
+        android:id="@+id/backgr"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/kidssenr"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="424dp"></ImageView>
+
+    <ImageView
+        android:id="@+id/homesign"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/home"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"></ImageView>
+
+    <ImageView
+        android:id="@+id/left_arrow"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/arrowleft"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstraints"></ImageView>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleimage"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="@dimen/_45sdp"
+        android:layout_marginBottom="@dimen/_45sdp"
+
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@android:color/transparent"
+        app:layout_constraintBottom_toBottomOf="parent"
+         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+        tools:itemCount="10"
+        android:layout_marginLeft="@dimen/_100sdp"
+        android:layout_marginRight="@dimen/_100sdp"
+        tools:listitem="@layout/alphabetimageview"
+         />
+-->
+    <!--<ImageView
+        android:id="@+id/a_sign"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/a"
+        app:layout_constraintTop_toBottomOf="@id/homesign"
+        app:layout_constraintLeft_toRightOf="@id/left_arrow"></ImageView>
+-->
+    <!--<ImageView
+        android:id="@+id/applelogo"
+        android:layout_width="@dimen/_80sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:background="@drawable/apple"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/homesign"
+        android:layout_marginStart="@dimen/_550sdp"></ImageView>-->
+
+    <ImageView
+        android:id="@+id/right_arrow"
+        android:layout_width="@dimen/_50sdp"
+        android:layout_height="@dimen/_50sdp"
+        android:background="@drawable/rghtarrow"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginStart="@dimen/_590sdp"></ImageView>
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
